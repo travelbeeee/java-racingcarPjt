@@ -9,4 +9,15 @@ public class Car {
     }
 
     // 추가 기능 구현
+    public void moveCar(){
+        this.position++;
+    }
+
+    public void printPosition(){
+        System.out.print(this.name + " : ");
+        for (int i = 0; i < position; i++) {
+            System.out.print("-");
+        }
+        System.out.println();
+    }
 }
